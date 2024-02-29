@@ -1,7 +1,7 @@
 var userId = "";
 
 window.onload = function () {
-  initializeLiff("1657810366-qwVxnED0");
+  initializeLiff("2003849504-W78vYRdO");
 };
 
 function initializeLiff(myLiffId) {
