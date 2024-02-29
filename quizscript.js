@@ -178,6 +178,27 @@ submitBtn.addEventListener("click", () => {
 
       // เพิ่มข้อมูลลงฐานข้อมูล sheet
       // addDataToSheet()
+
+      // let conf = {
+      //   calendar: "buddhist", // buddhist, iso8601
+      //   dateStyle: "long", // full, long, medium, short
+      // };
+      // let dd = new Date();
+      // let myDate = dd.toLocaleString("th-TH", conf);
+    
+      // let conf2 = {
+      //   calendar: "buddhist", // buddhist, iso8601
+      //   timeStyle: "medium", // full, long, medium, short
+      // };
+      // let tt = new Date();
+      // let milliSecTime = tt.getMilliseconds(); // มิลลิวินาที
+      // let myTime = tt.toLocaleString("th-TH", conf2);
+      // let timeTest = myTime + ":" + milliSecTime;
+    
+      // เพิ่มข้อมูลลงฐานข้อมูล sheet
+      var storedData = localStorage.getItem("user");
+      var stdData = JSON.parse(storedData);
+      console.log(stdData);
       
       let url = 'https://api.sheety.co/2fb80a9f78e03a86a9c645b99d92db92/score662/data';
       let body = {
