@@ -177,41 +177,41 @@ submitBtn.addEventListener("click", () => {
 
 
       // เพิ่มข้อมูลลงฐานข้อมูล sheet
-      addDataToSheet()
+      // addDataToSheet()
       
-      // let url = 'https://api.sheety.co/2fb80a9f78e03a86a9c645b99d92db92/score662/data';
-      // let body = {
-      //   datum: {
-      //     "date": myDate,
-      //     "time": timeTest,
-      //     "lineId": `${liff.getDecodedIDToken().sub}`,
-      //     "lineName": `${liff.getDecodedIDToken().name}`,
-      //     "room": `${room.val()}`,
-      //     "no": `${no.val()}`,
-      //     "stdid": `${stdid.val()}`,
-      //     "prename": `${prename.val()}`,
-      //     "fname": `${fname.val()}`,
-      //     "sname": `${sname.val()}`,
-      //     "subject": `${subjectNow}`,
-      //     "score": `${score}`,
-      //   }
-      // };
-      // // จาก chatGPT
-      // fetch(url, {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json' // เพิ่ม header สำหรับระบุประเภทข้อมูลเป็น JSON
-      //   },
-      //   body: JSON.stringify(body)
-      // })
-      //   .then((response) => response.json())
-      //   .then(json => {
-      //     // Do something with object
-      //     console.log(json.datum); // เปลี่ยนเป็น json.datum แทน body.datum
-      //   })
-      //   .catch(error => {
-      //     console.error('Error:', error);
-      //   });
+      let url = 'https://api.sheety.co/2fb80a9f78e03a86a9c645b99d92db92/score662/data';
+      let body = {
+        datum: {
+          "date": myDate,
+          "time": timeTest,
+          "lineId": `${liff.getDecodedIDToken().sub}`,
+          "lineName": `${liff.getDecodedIDToken().name}`,
+          "room": `${room.val()}`,
+          "no": `${no.val()}`,
+          "stdid": `${stdid.val()}`,
+          "prename": `${prename.val()}`,
+          "fname": `${fname.val()}`,
+          "sname": `${sname.val()}`,
+          "subject": `${subjectNow}`,
+          "score": `${score}`,
+        }
+      };
+      // จาก chatGPT
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json' // เพิ่ม header สำหรับระบุประเภทข้อมูลเป็น JSON
+        },
+        body: JSON.stringify(body)
+      })
+        .then((response) => response.json())
+        .then(json => {
+          // Do something with object
+          console.log(json.datum); // เปลี่ยนเป็น json.datum แทน body.datum
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
 
 
       quizContainer.innerHTML = `
