@@ -357,7 +357,7 @@ submitBtn.addEventListener("click", () => {
                         action: {
                           type: "uri",
                           label: "เริ่มทำแบบทดสอบใหม่",
-                          uri: "https://liff.line.me/1657810366-qwVxnED0",
+                          uri: "https://liff.line.me/2003849504-KrNJbwz1",
                         },
                         height: "sm",
                         style: "primary",
